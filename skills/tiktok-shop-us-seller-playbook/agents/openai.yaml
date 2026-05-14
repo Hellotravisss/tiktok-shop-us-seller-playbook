@@ -1,0 +1,7 @@
+interface:
+  display_name: "TikTok Shop US Seller Playbook"
+  short_description: "Bilingual US TikTok Shop playbook builder"
+  brand_color: "#0F766E"
+  default_prompt: "Use $tiktok-shop-us-seller-playbook to create a compliant bilingual TikTok Shop US seller onboarding playbook."
+policy:
+  allow_implicit_invocation: true
