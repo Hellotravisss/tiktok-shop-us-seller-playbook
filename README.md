@@ -54,13 +54,9 @@ Use $tiktok-shop-us-seller-playbook to create a compliant bilingual TikTok Shop 
 
 ## Compliance Boundary
 
-This repository does not include paid course text, private page captures, or branded course content.
-
 The skill does not provide instructions for VPN/proxy setup, location spoofing, device fingerprint evasion, fake documents, bought/rented shops, account farming, or bypassing platform controls. For rule-sensitive topics, verify the latest TikTok Shop Seller Center and Seller University pages before acting.
 
 ## 合规边界
-
-本仓库不包含付费课程原文、私有网页抓取内容或品牌课程内容。
 
 本 Skill 不提供代理/VPN、定位伪装、设备指纹规避、虚假资料、买店租店、账号农场或绕过平台控制的方法。涉及平台规则时，请以 TikTok Shop Seller Center 和 Seller University 当前页面为准。
 
