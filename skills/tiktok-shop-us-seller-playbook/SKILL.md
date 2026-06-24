@@ -7,9 +7,9 @@ description: Create, expand, audit, or redesign bilingual English/Chinese TikTok
 
 ## Core Rule
 
-Create original, practical training material in English, Chinese, or bilingual English/Chinese. Do not copy paid course text, private captures, or branded course material into outputs. Use the user's notes only to infer structure, gaps, pain points, and workflow order.
+Create original, practical training material in English, Chinese, or bilingual English/Chinese. Use the user's goals, notes, and business context to infer structure, gaps, pain points, and workflow order.
 
-输出英文、中文或中英双语的原创实操内容。不要复制付费课程原文、私有抓取页面或带品牌归属的课程材料。用户的笔记只能用来判断结构、缺口、痛点和流程顺序。
+输出英文、中文或中英双语的原创实操内容。根据用户的目标、笔记和业务背景，判断结构、缺口、痛点和流程顺序。
 
 Do not provide instructions for proxy/VPN setup, traffic tunneling, location spoofing, device fingerprint evasion, fake identity documents, bought/rented shops, account farming, or bypassing platform controls. Redirect those requests to compliant alternatives: authorized local team members, role-based permissions, real seller documents, official Seller Center guidance, and legitimate business operations.
 
