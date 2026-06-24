@@ -13,6 +13,7 @@ An open-source Codex Skill for creating practical TikTok Shop US seller playbook
 - Builds seller document checklists, SKU evaluation sheets, creator outreach trackers, daily operations SOPs, and weekly review tables
 - Audits training material for outdated rules, vague advice, missing steps, or risky compliance claims
 - Creates listing review, creator outreach, content calendar, and 90-day launch plans
+- Adds import-duty, China tariff, HTS code, and landed-cost checks for practical SKU decisions
 - Structures content for Markdown, DOCX, PDF, and Pages-friendly documents
 
 ## 它能做什么
@@ -22,6 +23,7 @@ An open-source Codex Skill for creating practical TikTok Shop US seller playbook
 - 制作开店资料清单、SKU 评估表、达人建联表、每日运营 SOP、每周复盘表
 - 审核教程里的过时规则、空泛内容、缺失步骤和合规风险
 - 生成商品上架检查、达人建联、内容排期和 90 天启动计划
+- 加入进口税费、中美关税、HTS 编码和含税到岸成本核对
 - 把内容整理成适合 Markdown、DOCX、PDF、Pages 的结构
 
 ## Install

@@ -15,6 +15,7 @@ CHAPTERS = [
     ("Shop Registration, Review, and Basic Seller Center Setup", "店铺注册、审核、后台基础设置"),
     ("Product Selection: Demand, Content Fit, Compliance, Profit, Supply Chain", "选品框架：需求、内容表现、合规、利润、供应链"),
     ("Supply Chain, Samples, QC, Packaging, and Inventory", "供应链、样品、质检、包装和库存"),
+    ("Import Duties, China Tariffs, HTS Codes, and Landed Cost", "进口税费、中美关税、HTS 编码和到岸成本"),
     ("Product Listing: Category, Title, Images, Selling Points, Price, Stock", "商品上架：类目、标题、图片、卖点、价格、库存"),
     ("Logistics, Fulfillment, Returns, Customer Service, and Reviews", "物流、履约、退货、客服和评价"),
     ("TikTok Account Positioning and Content Asset System", "TikTok 账号定位和内容素材系统"),
@@ -44,6 +45,7 @@ LABELS = {
         "file": "File or Link / 文件或入口",
         "status": "Status / 状态",
         "notes": "Notes / 备注",
+        "tariff_note": "Tariff snapshot: verify current official sources before final pricing. As of 2026-06-24, duty-free de minimis is suspended globally; old China IEEPA ad valorem tariffs were ended by EO 14389; a temporary Section 122 10% surcharge applies to many imports through July 24, 2026 unless exempt or changed; Section 301 China tariffs still depend on HTS code and exclusions. / 关税快照：最终定价前核对官方来源。截至 2026-06-24，美国全球低值免税已暂停；旧中国 IEEPA 从价附加税已由 EO 14389 终止；许多进口商品在 2026-07-24 前有 Section 122 临时 10% 附加税，除非豁免或变更；Section 301 中国关税仍按 HTS 编码和排除情况判断。",
     },
     "zh": {
         "title": "美国 TikTok Shop 从 0 到开店运营完整实操教程",
@@ -58,6 +60,7 @@ LABELS = {
         "file": "文件或入口",
         "status": "状态",
         "notes": "备注",
+        "tariff_note": "关税快照：最终定价前核对官方来源。截至 2026-06-24，美国全球低值免税已暂停；旧中国 IEEPA 从价附加税已由 EO 14389 终止；许多进口商品在 2026-07-24 前有 Section 122 临时 10% 附加税，除非豁免或变更；Section 301 中国关税仍按 HTS 编码和排除情况判断。",
     },
     "en": {
         "title": "TikTok Shop US Seller Playbook",
@@ -72,6 +75,7 @@ LABELS = {
         "file": "File or Link",
         "status": "Status",
         "notes": "Notes",
+        "tariff_note": "Tariff snapshot: verify current official sources before final pricing. As of 2026-06-24, duty-free de minimis is suspended globally; old China IEEPA ad valorem tariffs were ended by EO 14389; a temporary Section 122 10% surcharge applies to many imports through July 24, 2026 unless exempt or changed; Section 301 China tariffs still depend on HTS code and exclusions.",
     },
 }
 
@@ -82,6 +86,7 @@ CHECKLIST_ITEMS = {
         ("账号权限", "邮箱、密码管理、两步验证、团队角色"),
         ("店铺设置", "注册、审核、税务、收款、物流、退货地址"),
         ("商品准备", "选品、样品、质检、包装、库存、利润表"),
+        ("关税成本", "原产国、10 位 HTSUS、基础税率、Section 301/122/232/AD/CVD、报关行确认"),
         ("上架检查", "类目、标题、图片、卖点、价格、库存、发货承诺"),
         ("内容启动", "账号定位、素材库、脚本、发布节奏、复盘表"),
         ("达人合作", "筛选条件、建联话术、样品状态、佣金、结果复盘"),
@@ -92,6 +97,7 @@ CHECKLIST_ITEMS = {
         ("Account permissions", "Email, password manager, 2FA, team roles"),
         ("Shop setup", "Registration, review, tax, payout, logistics, return address"),
         ("Product readiness", "Selection, samples, QC, packaging, inventory, margin sheet"),
+        ("Tariff and landed cost", "Origin, 10-digit HTSUS, base duty, Section 301/122/232/AD/CVD, broker check"),
         ("Listing review", "Category, title, images, claims, price, stock, shipping promise"),
         ("Content launch", "Positioning, asset library, scripts, posting rhythm, review sheet"),
         ("Creator outreach", "Creator filters, outreach script, samples, commission, review"),
@@ -166,6 +172,14 @@ def chapter_block(index: int, en: str, zh: str, language: str) -> str:
         done_3 = "The current official requirement has been checked. / 已核对官方后台当前要求。"
         not_started = "Not started / 未开始"
 
+    tariff_section = ""
+    if any(key in en for key in ["Product Selection", "Import Duties", "Product Listing"]):
+        tariff_section = f"""
+### {localized_pair(language, '关税和成本提醒', 'Tariff and Cost Reminder')}
+
+{labels["tariff_note"]}
+"""
+
     return f"""## {chapter_title(index, en, zh, language)}
 
 ### {labels["objective"]}
@@ -188,6 +202,7 @@ def chapter_block(index: int, en: str, zh: str, language: str) -> str:
 
 - {mistake_1}
 - {mistake_2}
+{tariff_section}
 
 ### {labels["done"]}
 
@@ -210,8 +225,21 @@ def build_markdown(language: str, title: str | None) -> str:
         intro = "Original bilingual training template. Verify rule-sensitive details against the current TikTok Shop Seller Center and Seller University pages. / 原创双语实操手册模板。规则敏感内容以 TikTok Shop Seller Center 和 Seller University 当前页面为准。"
         boundary_header = "Compliance Boundary / 使用边界"
 
-    body = [f"# {doc_title}", "", f"> {intro}", "", f"## {boundary_header}", "", labels["boundary"], ""]
-    for idx, (en, zh) in enumerate(CHAPTERS):
+    body = [
+        f"# {doc_title}",
+        "",
+        f"> {intro}",
+        "",
+        f"## {boundary_header}",
+        "",
+        labels["boundary"],
+        "",
+        f"## {localized_pair(language, '进口税费快照', 'Import Duty Snapshot')}",
+        "",
+        labels["tariff_note"],
+        "",
+    ]
+    for idx, (en, zh) in enumerate(CHAPTERS, start=1):
         body.append(chapter_block(idx, en, zh, language))
     return "\n".join(body).rstrip() + "\n"
 
@@ -241,7 +269,8 @@ def build_checklist(language: str, title: str | None) -> str:
         "",
         f"1. {localized_pair(language, '先补齐所有未完成资料。', 'Complete every missing document first.')}",
         f"2. {localized_pair(language, '只选择 5-20 个 SKU 做首轮验证。', 'Validate only 5-20 SKUs in the first round.')}",
-        f"3. {localized_pair(language, '每天记录订单、客服、库存、内容和达人进度。', 'Track orders, service, inventory, content, and creator progress daily.')}",
+        f"3. {localized_pair(language, '每个 SKU 上架前补齐原产国、HTS 编码、含税到岸成本和报关行确认。', 'Before listing each SKU, confirm origin, HTS code, landed cost after duties, and broker review.')}",
+        f"4. {localized_pair(language, '每天记录订单、客服、库存、内容和达人进度。', 'Track orders, service, inventory, content, and creator progress daily.')}",
     ]) + "\n"
 
 
@@ -267,7 +296,7 @@ def build_90_day_plan(language: str, title: str | None) -> str:
             "",
             f"| {localized_pair(language, '周次', 'Week')} | {localized_pair(language, '重点', 'Focus')} | KPI | {localized_pair(language, '停止/调整信号', 'Stop or Adjust Signal')} |",
             "|---|---|---|---|",
-            f"| 1 | {localized_pair(language, '资料和规则核对', 'Documents and policy check')} | {localized_pair(language, '资料完成率', 'Document completion')} | {localized_pair(language, '审核资料不完整', 'Incomplete review documents')} |",
+            f"| 1 | {localized_pair(language, '资料、规则和关税核对', 'Documents, policy, and tariff check')} | {localized_pair(language, '资料完成率、HTS 完成率', 'Document completion, HTS completion')} | {localized_pair(language, '审核资料不完整或含税毛利不成立', 'Incomplete review documents or margin fails after duties')} |",
             f"| 2 | {localized_pair(language, '首批 SKU 和素材', 'First SKUs and assets')} | {localized_pair(language, 'SKU 数、素材数', 'SKU count, asset count')} | {localized_pair(language, '利润或合规不成立', 'Margin or compliance fails')} |",
             f"| 3-4 | {localized_pair(language, '上架和内容测试', 'Listings and content tests')} | {localized_pair(language, '播放、点击、加购', 'Views, clicks, add-to-cart')} | {localized_pair(language, '无点击或高退款风险', 'No clicks or high refund risk')} |",
             "",

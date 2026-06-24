@@ -1,6 +1,6 @@
 ---
 name: tiktok-shop-us-seller-playbook
-description: Create, expand, audit, or redesign English/Chinese TikTok Shop US seller playbooks, SOPs, checklists, worksheets, and training documents. Use for requests about US TikTok Shop onboarding, seller document preparation, shop setup, product listing, content calendars, creator outreach, ads, livestream prep, customer service, logistics, analytics, account health, or 30/60/90-day execution plans. Also use when the user asks for a beginner-friendly Chinese TikTok美区开店手册, TikTok小店运营SOP, or a step-by-step checklist.
+description: Create, expand, audit, or redesign English/Chinese TikTok Shop US seller playbooks, SOPs, checklists, worksheets, and training documents. Use for requests about US TikTok Shop onboarding, seller document preparation, shop setup, import duties/tariffs, landed cost, China-US tariff exposure, product listing, content calendars, creator outreach, ads, livestream prep, customer service, logistics, analytics, account health, or 30/60/90-day execution plans. Also use when the user asks for a beginner-friendly Chinese TikTok美区开店手册, TikTok小店运营SOP, or a step-by-step checklist.
 ---
 
 # TikTok Shop US Seller Playbook
@@ -30,6 +30,7 @@ Do not provide instructions for proxy/VPN setup, traffic tunneling, location spo
 2. Load only the needed references / 只读取需要的参考:
    - `references/playbook-structure.md` for chapter order and expected depth
    - `references/compliance-boundaries.md` for what to include or avoid
+   - `references/cross-border-rules.md` for current import-duty, de minimis, tariff, and landed-cost guidance
    - `references/official-sources.md` for public source links and verification reminders
    - `references/templates.md` for reusable bilingual tables and worksheets
 3. Ask or infer the output language:
@@ -39,7 +40,7 @@ Do not provide instructions for proxy/VPN setup, traffic tunneling, location spo
 4. Make the result operational:
    - Start with a short diagnosis: current stage, missing inputs, next three actions.
    - Each chapter should include Objective/本章目标, Preparation/要准备什么, Steps/具体步骤, Common mistakes/常见错误, Done criteria/完成标准.
-   - Use tables for seller documents, SKU evaluation, listing review, creator outreach, customer service, order handling, and weekly review.
+   - Use tables for seller documents, SKU evaluation, landed cost/tariff checks, listing review, creator outreach, customer service, order handling, and weekly review.
    - Mark rule-sensitive claims with “Verify in Seller Center / 以官方后台为准”.
 5. If producing a file, prefer Markdown first for content review, then DOCX/PDF/Pages-friendly formatting if requested.
 
@@ -49,6 +50,7 @@ Do not provide instructions for proxy/VPN setup, traffic tunneling, location spo
 - **完整手册**: use the chapter order in `references/playbook-structure.md`; keep every chapter actionable.
 - **SOP 清单**: use checkbox tables; assign owner, input, output, frequency, and done criteria.
 - **商品上架检查**: cover category, title, images, claims, price, inventory, shipping, return policy, and compliance.
+- **关税/成本检查**: identify country of origin, 10-digit HTS code, base duty, Section 301/232/122/AD/CVD exposure, de minimis status, broker confirmation, and landed-cost decision.
 - **内容达人计划**: produce hooks, video angles, creator filters, outreach templates, sample tracking, and weekly review metrics.
 - **90 天计划**: split into 0-30, 31-60, 61-90 days; each phase must include target outcome, weekly rhythm, KPIs, and stop-loss rules.
 

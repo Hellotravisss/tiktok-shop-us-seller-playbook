@@ -13,8 +13,13 @@
 
 ## SKU Evaluation Table / SKU 评估表
 
-| SKU | Target Customer / 目标人群 | Pain Point / 痛点 | Content Angle / 内容卖点 | Cost / 成本 | Price / 售价 | Margin / 毛利 | Compliance Risk / 合规风险 | Supply Stability / 供应稳定性 | Decision / 决策 |
-|---|---|---|---|---:|---:|---:|---|---|---|
+| SKU | Target Customer / 目标人群 | Pain Point / 痛点 | Content Angle / 内容卖点 | Cost / 成本 | Price / 售价 | Landed Cost / 到岸成本 | Margin / 毛利 | Compliance Risk / 合规风险 | Supply Stability / 供应稳定性 | Decision / 决策 |
+|---|---|---|---|---:|---:|---:|---:|---|---|---|
+
+## Tariff and Landed Cost Worksheet / 关税和到岸成本表
+
+| SKU | Origin / 原产国 | HTSUS 10-digit / 10 位税号 | Base Duty / 基础税率 | Section 301 | Section 122 | Section 232 / AD/CVD / Quota | Broker Checked / 报关行确认 | Check Date / 核对日期 | Landed Cost / 到岸成本 | Margin After Duty / 含税后毛利 | Decision / 决策 |
+|---|---|---|---:|---|---|---|---|---|---:|---:|---|
 
 ## Creator Outreach Tracker / 达人建联表
 
