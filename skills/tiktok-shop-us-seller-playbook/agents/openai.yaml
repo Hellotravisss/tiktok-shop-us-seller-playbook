@@ -1,7 +1,7 @@
 interface:
-  display_name: "TikTok Shop US Seller Playbook"
-  short_description: "Bilingual US TikTok Shop playbook builder"
+  display_name: "TikTok美区开店手册"
+  short_description: "生成美区TikTok Shop开店SOP"
   brand_color: "#0F766E"
-  default_prompt: "Use $tiktok-shop-us-seller-playbook to create a compliant bilingual TikTok Shop US seller onboarding playbook."
+  default_prompt: "Use $tiktok-shop-us-seller-playbook to create a Chinese step-by-step TikTok Shop US onboarding checklist and 30/60/90-day plan."
 policy:
   allow_implicit_invocation: true

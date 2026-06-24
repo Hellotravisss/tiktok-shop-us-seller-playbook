@@ -1,6 +1,6 @@
 ---
 name: tiktok-shop-us-seller-playbook
-description: Create, expand, audit, or redesign bilingual English/Chinese TikTok Shop US seller onboarding playbooks, SOPs, checklists, worksheets, and training documents. Use when the user wants a practical step-by-step US TikTok Shop guide covering compliant setup, seller documents, shop configuration, product listing, content operations, creator outreach, ads, livestream operations, customer service, logistics, analytics, or a 30/60/90-day execution plan.
+description: Create, expand, audit, or redesign English/Chinese TikTok Shop US seller playbooks, SOPs, checklists, worksheets, and training documents. Use for requests about US TikTok Shop onboarding, seller document preparation, shop setup, product listing, content calendars, creator outreach, ads, livestream prep, customer service, logistics, analytics, account health, or 30/60/90-day execution plans. Also use when the user asks for a beginner-friendly Chinese TikTok美区开店手册, TikTok小店运营SOP, or a step-by-step checklist.
 ---
 
 # TikTok Shop US Seller Playbook
@@ -18,9 +18,12 @@ Do not provide instructions for proxy/VPN setup, traffic tunneling, location spo
 ## Workflow
 
 1. Identify the deliverable / 确认交付物:
+   - diagnostic audit / 开店条件诊断
    - full beginner playbook / 完整新手手册
    - chapter expansion / 单章扩写
    - SOP/checklist pack / SOP 和清单包
+   - product listing review / 商品上架检查
+   - content or creator plan / 内容或达人计划
    - document redesign for Markdown/DOCX/PDF/Pages / 文档重排版
    - official-policy audit / 官方规则审校
    - 30/60/90-day execution plan / 30/60/90 天执行计划
@@ -30,14 +33,24 @@ Do not provide instructions for proxy/VPN setup, traffic tunneling, location spo
    - `references/official-sources.md` for public source links and verification reminders
    - `references/templates.md` for reusable bilingual tables and worksheets
 3. Ask or infer the output language:
+   - Default to Chinese for China-based operator training and SkillHub-style usage.
    - Default to bilingual English/Chinese for public GitHub-ready material.
-   - Default to Chinese for China-based operator training unless the user asks for English.
    - Default to English for global contributor docs unless the user asks for Chinese.
 4. Make the result operational:
+   - Start with a short diagnosis: current stage, missing inputs, next three actions.
    - Each chapter should include Objective/本章目标, Preparation/要准备什么, Steps/具体步骤, Common mistakes/常见错误, Done criteria/完成标准.
-   - Use tables for seller documents, SKU evaluation, creator outreach, customer service, order handling, and weekly review.
+   - Use tables for seller documents, SKU evaluation, listing review, creator outreach, customer service, order handling, and weekly review.
    - Mark rule-sensitive claims with “Verify in Seller Center / 以官方后台为准”.
 5. If producing a file, prefer Markdown first for content review, then DOCX/PDF/Pages-friendly formatting if requested.
+
+## Output Recipes
+
+- **开店诊断**: return `现状判断`, `缺失资料`, `风险提醒`, `下一步 7 天动作`.
+- **完整手册**: use the chapter order in `references/playbook-structure.md`; keep every chapter actionable.
+- **SOP 清单**: use checkbox tables; assign owner, input, output, frequency, and done criteria.
+- **商品上架检查**: cover category, title, images, claims, price, inventory, shipping, return policy, and compliance.
+- **内容达人计划**: produce hooks, video angles, creator filters, outreach templates, sample tracking, and weekly review metrics.
+- **90 天计划**: split into 0-30, 31-60, 61-90 days; each phase must include target outcome, weekly rhythm, KPIs, and stop-loss rules.
 
 ## Quality Bar
 
@@ -46,15 +59,17 @@ Do not provide instructions for proxy/VPN setup, traffic tunneling, location spo
 - Keep official platform terms in English where sellers will see them in Seller Center, then explain them in Chinese when useful.
 - Include reality checks: costs, lead time, compliance risk, logistics timing, refund handling, and owner/responsibility.
 - Add checklists that can be marked complete.
+- Avoid vague motivational advice. Every section should produce a decision, document, table, script, checklist, or operating rhythm.
 
 ## Useful Script
 
 Run `scripts/create_playbook_markdown.py` to generate a clean starter playbook Markdown file:
 
 ```bash
-python scripts/create_playbook_markdown.py --language bilingual --output playbook.md
+python scripts/create_playbook_markdown.py --language zh --mode playbook --output playbook.md
 ```
 
 Supported language values: `bilingual`, `zh`, `en`.
+Supported modes: `playbook`, `checklist`, `90-day`.
 
 Use the generated file as a scaffold, then expand chapters based on the user's product category, business model, and current progress.
