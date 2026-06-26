@@ -1,7 +1,7 @@
 interface:
   display_name: "TikTok美区开店手册"
-  short_description: "生成美区TikTok Shop开店SOP"
+  short_description: "生成开店、利润、内容和运营SOP"
   brand_color: "#0F766E"
-  default_prompt: "Use $tiktok-shop-us-seller-playbook to create a Chinese step-by-step TikTok Shop US onboarding checklist and 30/60/90-day plan."
+  default_prompt: "Use $tiktok-shop-us-seller-playbook to create a Chinese TikTok Shop US launch playbook with onboarding checklist, tariff/profit model, content calendar, creator outreach pack, daily operations SOP, and 30/60/90-day plan."
 policy:
   allow_implicit_invocation: true

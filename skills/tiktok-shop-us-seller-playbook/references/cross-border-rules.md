@@ -18,6 +18,8 @@ Snapshot date: 2026-06-25. Tariffs and platform rules can change quickly. Use th
 - Section 232、反倾销/反补贴、配额、FDA/CPSC/FCC/FTC 等监管要求，可能直接改变成本或能否销售。
 - Treat every tariff statement as date-sensitive. Before quoting a final landed cost, check White House presidential actions, CBP CSMS/messages, USTR notices, and the current USITC HTS.
 - 所有关税判断都要当作“按日期变化”。报价或下单前，必须核对 White House 行政令、CBP CSMS/公告、USTR 通知和 USITC 当前 HTS。
+- Customs enforcement is tightening around false declarations, evasive import structures, foreign importer-of-record risk, bond sufficiency, broker due diligence, and supply-chain transparency. Do not treat customs entry as a paperwork afterthought.
+- 美国海关执法正在加强对虚假申报、规避性进口结构、境外 Importer of Record 风险、bond 是否足额、报关行尽调和供应链透明度的关注。不要把清关当作最后随手填表。
 
 ## Tariff Check Workflow / 关税核对流程
 
@@ -46,6 +48,8 @@ Before placing a bulk order or shipping inventory to the US, require this eviden
 - Current Chapter 99 and trade-remedy checks: Section 301, Section 122, Section 232, AD/CVD, quota, exclusions.
 - De minimis and entry-type decision: do not assume duty-free entry.
 - Customs broker confirmation with date, name, and email or document reference.
+- Importer of Record decision, bond status, broker power of attorney, and responsible party.
+- Supplier invoice, packing list, purchase order, payment record, product photos, and origin evidence.
 - Landed-cost worksheet showing margin after duty, freight, platform fees, refunds, creator/ads allowance, and fulfillment.
 
 大货下单或发往美国前，要求留存这些证据：
@@ -57,7 +61,19 @@ Before placing a bulk order or shipping inventory to the US, require this eviden
 - 当前 Chapter 99 和贸易救济检查：Section 301、Section 122、Section 232、AD/CVD、配额、排除。
 - 低值免税和报关方式判断：不要默认免税入境。
 - 报关行确认，记录日期、联系人和邮件或文件编号。
+- Importer of Record 决策、bond 状态、报关委托书和责任人。
+- 供应商发票、装箱单、采购订单、付款记录、产品照片和原产地证据。
 - 到岸成本表，包含关税、运费、平台费、退款损耗、达人/广告预留和履约成本后的利润。
+
+## Importer and Broker Controls / 进口责任人和报关控制
+
+| Control / 控制点 | Why It Matters / 为什么重要 | Evidence / 证据 |
+|---|---|---|
+| Importer of Record / 进口责任人 | Determines who is legally responsible for entry accuracy / 决定谁对申报真实性负责 | IOR name, EIN/ID, POA / IOR 名称、EIN/ID、委托书 |
+| Customs bond / 海关 bond | Required for many formal entries and risk management / 很多正式报关和风险控制需要 | Bond record / bond 记录 |
+| Broker review / 报关行审核 | Reduces classification and trade-remedy errors / 降低归类和贸易救济错误 | Broker email, HTS memo / 报关行邮件、HTS 说明 |
+| Origin evidence / 原产地证据 | Prevents false country-of-origin claims / 防止虚假原产地 | Supplier declaration, production docs / 供应商声明、生产资料 |
+| Valuation evidence / 估价证据 | Supports declared value / 支撑申报价值 | Invoice, payment, PO / 发票、付款、采购单 |
 
 ## Landed Cost Formula / 到岸成本公式
 

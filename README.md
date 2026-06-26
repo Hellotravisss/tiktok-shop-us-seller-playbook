@@ -15,6 +15,7 @@ An open-source Codex Skill for creating practical TikTok Shop US seller playbook
 - Creates listing review, creator outreach, content calendar, and 90-day launch plans
 - Adds import-duty, China tariff, HTS code, and landed-cost checks for practical SKU decisions
 - Adds compliant content research tooling, including GreenVideo for authorized downloads and script deconstruction
+- Generates profit models, 30-day content calendars, creator outreach packs, and daily operations SOPs
 - Structures content for Markdown, DOCX, PDF, and Pages-friendly documents
 
 ## 它能做什么
@@ -26,6 +27,7 @@ An open-source Codex Skill for creating practical TikTok Shop US seller playbook
 - 生成商品上架检查、达人建联、内容排期和 90 天启动计划
 - 加入进口税费、中美关税、HTS 编码和含税到岸成本核对
 - 补充 GreenVideo 等内容素材工具，用于授权下载、素材库整理和脚本拆解
+- 生成利润测算、30 天内容日历、达人建联包和每日运营 SOP
 - 把内容整理成适合 Markdown、DOCX、PDF、Pages 的结构
 
 ## Install
@@ -40,7 +42,7 @@ cp -R skills/tiktok-shop-us-seller-playbook ~/.codex/skills/
 Then invoke it with:
 
 ```text
-Use $tiktok-shop-us-seller-playbook to create a Chinese step-by-step TikTok Shop US onboarding checklist and 30/60/90-day plan.
+Use $tiktok-shop-us-seller-playbook to create a Chinese TikTok Shop US launch playbook with onboarding checklist, tariff/profit model, content calendar, creator outreach pack, daily operations SOP, and 30/60/90-day plan.
 ```
 
 ## 安装
@@ -55,7 +57,18 @@ cp -R skills/tiktok-shop-us-seller-playbook ~/.codex/skills/
 然后这样调用：
 
 ```text
-Use $tiktok-shop-us-seller-playbook to create a Chinese step-by-step TikTok Shop US onboarding checklist and 30/60/90-day plan.
+Use $tiktok-shop-us-seller-playbook to create a Chinese TikTok Shop US launch playbook with onboarding checklist, tariff/profit model, content calendar, creator outreach pack, daily operations SOP, and 30/60/90-day plan.
+```
+
+## Script Outputs / 脚本输出
+
+```bash
+python skills/tiktok-shop-us-seller-playbook/scripts/create_playbook_markdown.py --language zh --mode playbook --output playbook.md
+python skills/tiktok-shop-us-seller-playbook/scripts/create_playbook_markdown.py --language zh --mode profit --output profit.md
+python skills/tiktok-shop-us-seller-playbook/scripts/create_playbook_markdown.py --language zh --mode content-calendar --output content-calendar.md
+python skills/tiktok-shop-us-seller-playbook/scripts/create_playbook_markdown.py --language zh --mode creator-pack --output creator-pack.md
+python skills/tiktok-shop-us-seller-playbook/scripts/create_playbook_markdown.py --language zh --mode ops-sop --output ops-sop.md
+python skills/tiktok-shop-us-seller-playbook/scripts/create_playbook_markdown.py --language zh --mode workbook --output workbook.md
 ```
 
 ## Compliance Boundary

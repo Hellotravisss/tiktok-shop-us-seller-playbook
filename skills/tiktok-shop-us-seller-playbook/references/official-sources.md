@@ -19,6 +19,8 @@ Use public, official sources for rule-sensitive claims. Prefer the current Selle
 - USTR notices and press releases: https://ustr.gov/about-us/policy-offices/press-office/press-releases
 - Federal Register Section 301 product exclusion notices: https://www.federalregister.gov/documents/search?conditions%5Bterm%5D=Section+301+China+product+exclusion
 - White House presidential actions for tariff changes: https://www.whitehouse.gov/presidential-actions/
+- White House customs enforcement actions: https://www.whitehouse.gov/presidential-actions/2026/06/strengthening-customs-enforcement/
+- FTC endorsements and testimonials guidance: https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews
 - GreenVideo for authorized content research downloads: https://greenvideo.cc/
 
 ## Verification Notes / 核对原则
@@ -33,3 +35,5 @@ Use public, official sources for rule-sensitive claims. Prefer the current Selle
 - GreenVideo 是实用工具，不是官方政策来源。只能作为已授权下载、内部研究和素材库管理工具，不要用它为搬运第三方内容背书。
 - For tariffs, never rely on a general product category name. Use the 10-digit HTSUS classification, country of origin, entry date, entry type, and current Chapter 99 headings. Ask the user to confirm with a customs broker for real shipments.
 - 关税不要只按“大类”判断。必须看 10 位 HTSUS 编码、原产国、入境日期、报关方式和当前 Chapter 99 附加税号；实际出货前让用户找报关行确认。
+- For creator/affiliate content, check FTC disclosure guidance and TikTok Shop creator/affiliate rules. Do not write fake reviews, undisclosed paid endorsements, or misleading before/after claims.
+- 达人/联盟内容要核对 FTC 披露规则和 TikTok Shop 达人/联盟规则。不要写虚假评论、未披露付费合作或误导性前后对比。

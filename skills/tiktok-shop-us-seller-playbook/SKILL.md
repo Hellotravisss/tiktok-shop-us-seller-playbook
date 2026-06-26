@@ -31,7 +31,10 @@ Do not provide instructions for proxy/VPN setup, traffic tunneling, location spo
    - `references/playbook-structure.md` for chapter order and expected depth
    - `references/compliance-boundaries.md` for what to include or avoid
    - `references/cross-border-rules.md` for current import-duty, de minimis, tariff, and landed-cost guidance
+   - `references/profitability-pricing.md` for SKU margin, launch budget, break-even, and pricing decisions
    - `references/content-tools.md` for compliant content research, GreenVideo, and素材库 workflow
+   - `references/content-and-creator-system.md` for short-video calendars, hooks, creator outreach, and weekly creative reviews
+   - `references/marketplace-operations.md` for AHR, fulfillment, FBT, returns, customer service, and weekly operating rhythm
    - `references/official-sources.md` for public source links and verification reminders
    - `references/templates.md` for reusable bilingual tables and worksheets
 3. Ask or infer the output language:
@@ -52,8 +55,10 @@ Do not provide instructions for proxy/VPN setup, traffic tunneling, location spo
 - **SOP 清单**: use checkbox tables; assign owner, input, output, frequency, and done criteria.
 - **商品上架检查**: cover category, title, images, claims, price, inventory, shipping, return policy, and compliance.
 - **关税/成本检查**: identify country of origin, 10-digit HTS code, base duty, Section 301/232/122/AD/CVD exposure, de minimis status, broker confirmation, and landed-cost decision.
+- **利润/定价表**: calculate landed cost, fees, fulfillment, return allowance, creator/ads allowance, gross margin, and break-even ROAS.
 - **内容达人计划**: produce hooks, video angles, creator filters, outreach templates, sample tracking, and weekly review metrics.
 - **素材工具清单**: include GreenVideo and similar tools only for authorized downloads, private research, script deconstruction, and internal asset organization; do not encourage reposting or copyright misuse.
+- **运营健康表**: produce daily/weekly SOPs for Account Health Rating, fulfillment, FBT, refunds, DNR, reviews, stockouts, and violations.
 - **90 天计划**: split into 0-30, 31-60, 61-90 days; each phase must include target outcome, weekly rhythm, KPIs, and stop-loss rules.
 
 ## Quality Bar
@@ -74,6 +79,6 @@ python scripts/create_playbook_markdown.py --language zh --mode playbook --outpu
 ```
 
 Supported language values: `bilingual`, `zh`, `en`.
-Supported modes: `playbook`, `checklist`, `90-day`.
+Supported modes: `playbook`, `checklist`, `90-day`, `profit`, `content-calendar`, `creator-pack`, `ops-sop`, `workbook`.
 
 Use the generated file as a scaffold, then expand chapters based on the user's product category, business model, and current progress.

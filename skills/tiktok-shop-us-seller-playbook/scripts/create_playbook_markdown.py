@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate TikTok Shop US seller playbook, checklist, or launch-plan scaffolds."""
+"""Generate TikTok Shop US seller playbook, checklist, launch, profit, content, creator, or ops scaffolds."""
 
 from __future__ import annotations
 
@@ -317,17 +317,133 @@ def build_90_day_plan(language: str, title: str | None) -> str:
     return "\n".join(parts).rstrip() + "\n"
 
 
+def build_profit_model(language: str, title: str | None) -> str:
+    doc_title = title or localized_pair(language, "TikTok Shop 美区 SKU 利润和关税测算表", "TikTok Shop US SKU Profit and Tariff Model")
+    return "\n".join([
+        f"# {doc_title}",
+        "",
+        f"> {localized_pair(language, '用途：判断 SKU 是否值得测、能不能放大、关税后利润是否成立。实际出货前必须核对 HTSUS、报关行和 Seller Center 当前费用。', 'Use this to decide whether a SKU is testable, scalable, and profitable after duties. Verify HTSUS, broker review, and current Seller Center fees before shipping.')}",
+        "",
+        f"## {localized_pair(language, '关税核验', 'Tariff Check')}",
+        "",
+        f"| SKU | {localized_pair(language, '原产国', 'Origin')} | HTSUS | {localized_pair(language, '基础税率', 'Base Duty')} | Section 301 | Section 122 | Section 232 / AD/CVD | {localized_pair(language, '报关行确认', 'Broker Check')} | {localized_pair(language, '日期', 'Date')} |",
+        "|---|---|---|---:|---|---|---|---|---|",
+        "",
+        f"## {localized_pair(language, '利润测算', 'Profit Model')}",
+        "",
+        f"| SKU | {localized_pair(language, '售价', 'Price')} | {localized_pair(language, '货品', 'Product Cost')} | {localized_pair(language, '运费', 'Freight')} | {localized_pair(language, '关税', 'Duty/Tariff')} | {localized_pair(language, '平台费', 'Platform Fee')} | {localized_pair(language, '履约', 'Fulfillment')} | {localized_pair(language, '退货预留', 'Return Allowance')} | {localized_pair(language, '达人广告', 'Creator/Ads')} | {localized_pair(language, '利润', 'Profit')} | {localized_pair(language, '毛利率', 'Margin')} | {localized_pair(language, '决策', 'Decision')} |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|",
+        "",
+        f"## {localized_pair(language, '决策规则', 'Decision Rules')}",
+        "",
+        f"- {localized_pair(language, 'HTS 或原产国不确定时，不做大货。', 'Do not place bulk orders if HTS or origin is uncertain.')}",
+        f"- {localized_pair(language, '含税毛利不成立时，先换供应链、涨价或换 SKU。', 'If margin fails after duties, change supplier, price, or SKU first.')}",
+        f"- {localized_pair(language, '退款率、破损率、达人佣金和广告预留必须进入测算。', 'Include refund rate, damage rate, creator commission, and ad allowance in the model.')}",
+    ]) + "\n"
+
+
+def build_content_calendar(language: str, title: str | None) -> str:
+    doc_title = title or localized_pair(language, "TikTok Shop 美区 30 天内容日历", "TikTok Shop US 30-Day Content Calendar")
+    hooks = [
+        ("痛点演示", "Problem demo", "Stop doing this every morning"),
+        ("前后对比", "Before/after", "One small change fixed this"),
+        ("功能证明", "Feature proof", "I tested this for 7 days"),
+        ("UGC 口吻", "UGC style", "I didn't expect this to work"),
+        ("异议解答", "Objection answer", "Is it worth the price?"),
+    ]
+    rows = [
+        f"| {i} | {localized_pair(language, zh, en)} | {hook} |  |  |  |  |"
+        for i, (zh, en, hook) in enumerate(hooks, start=1)
+    ]
+    return "\n".join([
+        f"# {doc_title}",
+        "",
+        f"> {localized_pair(language, 'GreenVideo 可用于已授权下载、保存自有视频、内部研究和脚本拆解；不要搬运第三方视频。', 'Use GreenVideo for authorized downloads, your own videos, internal research, and script deconstruction; do not repost third-party videos.')}",
+        "",
+        f"| {localized_pair(language, '天', 'Day')} | {localized_pair(language, '类型', 'Type')} | Hook | {localized_pair(language, '产品角度', 'Product Angle')} | {localized_pair(language, '所需素材', 'Asset Needed')} | CTA | KPI |",
+        "|---:|---|---|---|---|---|---|",
+        *rows,
+        "",
+        f"## {localized_pair(language, '每周复盘', 'Weekly Review')}",
+        "",
+        f"1. {localized_pair(language, '按 3 秒留存、点击、加购、转化、评论和退款信号排序。', 'Sort by 3-second hold, clicks, add-to-cart, conversion, comments, and refund signals.')}",
+        f"2. {localized_pair(language, '保留胜出的钩子和场景，重拍原创素材。', 'Keep winning hooks and scenes, then reshoot original assets.')}",
+        f"3. {localized_pair(language, '记录可使用权利状态：自有、已授权、仅研究。', 'Record rights status: own, authorized, or research only.')}",
+    ]) + "\n"
+
+
+def build_creator_pack(language: str, title: str | None) -> str:
+    doc_title = title or localized_pair(language, "TikTok Shop 美区达人建联包", "TikTok Shop US Creator Outreach Pack")
+    return "\n".join([
+        f"# {doc_title}",
+        "",
+        f"## {localized_pair(language, '达人筛选表', 'Creator Filter')}",
+        "",
+        f"| {localized_pair(language, '达人', 'Creator')} | Link | {localized_pair(language, '粉丝', 'Followers')} | {localized_pair(language, '内容匹配', 'Fit')} | {localized_pair(language, '受众', 'Audience')} | {localized_pair(language, '风险', 'Risk')} | {localized_pair(language, '动作', 'Action')} |",
+        "|---|---|---:|---|---|---|---|",
+        "",
+        f"## {localized_pair(language, '建联话术', 'Outreach Script')}",
+        "",
+        localized_pair(
+            language,
+            "你好 [名字]，我看到你关于 [主题] 的视频，很适合我们的 [产品]。我们想找真实使用感强的达人做短视频测评，可以提供 [样品/佣金/brief]。如果你感兴趣，我可以发产品信息和拍摄方向。",
+            "Hi [Name], I liked your video about [topic]. We are launching [product] for [buyer type] and think your style fits. Would you be open to testing a sample and creating a short honest review? We can provide [sample/commission/brief].",
+        ),
+        "",
+        f"## {localized_pair(language, '复盘表', 'Review Table')}",
+        "",
+        f"| {localized_pair(language, '达人', 'Creator')} | {localized_pair(language, '角度', 'Angle')} | Views | CTR | {localized_pair(language, '订单', 'Orders')} | {localized_pair(language, '退款', 'Refunds')} | {localized_pair(language, '成本', 'Cost')} | {localized_pair(language, '下一步', 'Next Step')} |",
+        "|---|---|---:|---:|---:|---:|---:|---|",
+    ]) + "\n"
+
+
+def build_ops_sop(language: str, title: str | None) -> str:
+    doc_title = title or localized_pair(language, "TikTok Shop 美区每日运营 SOP", "TikTok Shop US Daily Operations SOP")
+    return "\n".join([
+        f"# {doc_title}",
+        "",
+        f"| {localized_pair(language, '时间', 'Time')} | {localized_pair(language, '检查', 'Check')} | {localized_pair(language, '动作', 'Action')} | {localized_pair(language, '留痕', 'Evidence')} |",
+        "|---|---|---|---|",
+        f"| {localized_pair(language, '上午', 'Morning')} | {localized_pair(language, '订单、未发货、取消风险', 'Orders, unshipped, cancellation risk')} | {localized_pair(language, '当天发货或升级处理', 'Ship or escalate same day')} | {localized_pair(language, '订单截图', 'Order screenshot')} |",
+        f"| {localized_pair(language, '中午', 'Midday')} | {localized_pair(language, '买家消息、退货、退款、DNR', 'Buyer messages, returns, refunds, DNR')} | {localized_pair(language, '平台流程内回复', 'Reply in approved workflow')} | {localized_pair(language, '消息记录', 'Message log')} |",
+        f"| {localized_pair(language, '下午', 'Afternoon')} | {localized_pair(language, '库存、FBT 入仓、断货风险', 'Inventory, FBT inbound, stockout risk')} | {localized_pair(language, '补货或暂停风险链接', 'Replenish or pause risky listings')} | {localized_pair(language, '库存表', 'Inventory sheet')} |",
+        f"| {localized_pair(language, '晚上', 'Evening')} | AHR, {localized_pair(language, '违规、链接健康、评价', 'violations, listing health, reviews')} | {localized_pair(language, '修根因并记录负责人', 'Fix root cause and record owner')} | {localized_pair(language, '异常表', 'Issue log')} |",
+        "",
+        f"## {localized_pair(language, '预警指标', 'Warning Metrics')}",
+        "",
+        f"- AHR, OTDR, SFCR, {localized_pair(language, '未发货率、缺货取消率、退款率、差评、违规。', 'unshipped rate, out-of-stock cancellation, refund rate, bad reviews, violations.')}",
+    ]) + "\n"
+
+
+def build_workbook(language: str, title: str | None) -> str:
+    doc_title = title or localized_pair(language, "TikTok Shop 美区实操工作簿", "TikTok Shop US Operator Workbook")
+    sections = [
+        f"# {doc_title}\n",
+        build_checklist(language, localized_pair(language, "开店总检查清单", "Launch Master Checklist")),
+        build_profit_model(language, localized_pair(language, "SKU 利润和关税测算", "SKU Profit and Tariff Model")),
+        build_content_calendar(language, localized_pair(language, "30 天内容日历", "30-Day Content Calendar")),
+        build_creator_pack(language, localized_pair(language, "达人建联和复盘", "Creator Outreach and Review")),
+        build_ops_sop(language, localized_pair(language, "每日运营 SOP", "Daily Operations SOP")),
+    ]
+    return "\n---\n\n".join(section.rstrip() for section in sections) + "\n"
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", default="tiktok-shop-us-playbook.md")
     parser.add_argument("--language", choices=["bilingual", "zh", "en"], default="bilingual")
-    parser.add_argument("--mode", choices=["playbook", "checklist", "90-day"], default="playbook")
+    parser.add_argument("--mode", choices=["playbook", "checklist", "90-day", "profit", "content-calendar", "creator-pack", "ops-sop", "workbook"], default="playbook")
     parser.add_argument("--title", default=None)
     args = parser.parse_args()
     builders = {
         "playbook": build_markdown,
         "checklist": build_checklist,
         "90-day": build_90_day_plan,
+        "profit": build_profit_model,
+        "content-calendar": build_content_calendar,
+        "creator-pack": build_creator_pack,
+        "ops-sop": build_ops_sop,
+        "workbook": build_workbook,
     }
     Path(args.output).write_text(builders[args.mode](args.language, args.title), encoding="utf-8")
 
