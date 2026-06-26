@@ -18,7 +18,7 @@ CHAPTERS = [
     ("Import Duties, China Tariffs, HTS Codes, and Landed Cost", "进口税费、中美关税、HTS 编码和到岸成本"),
     ("Product Listing: Category, Title, Images, Selling Points, Price, Stock", "商品上架：类目、标题、图片、卖点、价格、库存"),
     ("Logistics, Fulfillment, Returns, Customer Service, and Reviews", "物流、履约、退货、客服和评价"),
-    ("TikTok Account Positioning and Content Asset System", "TikTok 账号定位和内容素材系统"),
+    ("TikTok Account Positioning, GreenVideo, and Content Asset System", "TikTok 账号定位、GreenVideo 和内容素材系统"),
     ("Short Video Scripts, Shooting, Editing, Publishing, and Review", "短视频脚本、拍摄、剪辑、发布和复盘"),
     ("Creator/Affiliate Outreach, Samples, Commission, and Review", "Creator/Affiliate 达人建联、寄样、佣金和复盘"),
     ("Ads Basics: Budget, Creatives, Objectives, Data Decisions", "广告投放入门：预算、素材、目标、数据判断"),
@@ -45,7 +45,8 @@ LABELS = {
         "file": "File or Link / 文件或入口",
         "status": "Status / 状态",
         "notes": "Notes / 备注",
-        "tariff_note": "Tariff snapshot: verify current official sources before final pricing. As of 2026-06-24, duty-free de minimis is suspended globally; old China IEEPA ad valorem tariffs were ended by EO 14389; a temporary Section 122 10% surcharge applies to many imports through July 24, 2026 unless exempt or changed; Section 301 China tariffs still depend on HTS code and exclusions. / 关税快照：最终定价前核对官方来源。截至 2026-06-24，美国全球低值免税已暂停；旧中国 IEEPA 从价附加税已由 EO 14389 终止；许多进口商品在 2026-07-24 前有 Section 122 临时 10% 附加税，除非豁免或变更；Section 301 中国关税仍按 HTS 编码和排除情况判断。",
+        "tariff_note": "Tariff snapshot: verify current official sources before final pricing. As of 2026-06-25, duty-free de minimis is suspended globally; old China IEEPA ad valorem tariffs were ended by EO 14389; a temporary Section 122 10% surcharge applies to many imports through July 24, 2026 unless exempt or changed; Section 301 China tariffs still depend on HTS code and exclusions. / 关税快照：最终定价前核对官方来源。截至 2026-06-25，美国全球低值免税已暂停；旧中国 IEEPA 从价附加税已由 EO 14389 终止；许多进口商品在 2026-07-24 前有 Section 122 临时 10% 附加税，除非豁免或变更；Section 301 中国关税仍按 HTS 编码和排除情况判断。",
+        "content_tool_note": "GreenVideo: https://greenvideo.cc/. Use it for authorized downloads, saving your own videos, internal research, and script deconstruction. Do not repost third-party videos or remove watermarks to hide origin. / GreenVideo：https://greenvideo.cc/。用于已授权下载、保存自己视频、内部研究和脚本拆解。不要搬运第三方视频，也不要去水印隐藏来源。",
     },
     "zh": {
         "title": "美国 TikTok Shop 从 0 到开店运营完整实操教程",
@@ -60,7 +61,8 @@ LABELS = {
         "file": "文件或入口",
         "status": "状态",
         "notes": "备注",
-        "tariff_note": "关税快照：最终定价前核对官方来源。截至 2026-06-24，美国全球低值免税已暂停；旧中国 IEEPA 从价附加税已由 EO 14389 终止；许多进口商品在 2026-07-24 前有 Section 122 临时 10% 附加税，除非豁免或变更；Section 301 中国关税仍按 HTS 编码和排除情况判断。",
+        "tariff_note": "关税快照：最终定价前核对官方来源。截至 2026-06-25，美国全球低值免税已暂停；旧中国 IEEPA 从价附加税已由 EO 14389 终止；许多进口商品在 2026-07-24 前有 Section 122 临时 10% 附加税，除非豁免或变更；Section 301 中国关税仍按 HTS 编码和排除情况判断。",
+        "content_tool_note": "GreenVideo：https://greenvideo.cc/。用于已授权下载、保存自己视频、内部研究和脚本拆解。不要搬运第三方视频，也不要去水印隐藏来源。",
     },
     "en": {
         "title": "TikTok Shop US Seller Playbook",
@@ -75,7 +77,8 @@ LABELS = {
         "file": "File or Link",
         "status": "Status",
         "notes": "Notes",
-        "tariff_note": "Tariff snapshot: verify current official sources before final pricing. As of 2026-06-24, duty-free de minimis is suspended globally; old China IEEPA ad valorem tariffs were ended by EO 14389; a temporary Section 122 10% surcharge applies to many imports through July 24, 2026 unless exempt or changed; Section 301 China tariffs still depend on HTS code and exclusions.",
+        "tariff_note": "Tariff snapshot: verify current official sources before final pricing. As of 2026-06-25, duty-free de minimis is suspended globally; old China IEEPA ad valorem tariffs were ended by EO 14389; a temporary Section 122 10% surcharge applies to many imports through July 24, 2026 unless exempt or changed; Section 301 China tariffs still depend on HTS code and exclusions.",
+        "content_tool_note": "GreenVideo: https://greenvideo.cc/. Use it for authorized downloads, saving your own videos, internal research, and script deconstruction. Do not repost third-party videos or remove watermarks to hide origin.",
     },
 }
 
@@ -89,6 +92,7 @@ CHECKLIST_ITEMS = {
         ("关税成本", "原产国、10 位 HTSUS、基础税率、Section 301/122/232/AD/CVD、报关行确认"),
         ("上架检查", "类目、标题、图片、卖点、价格、库存、发货承诺"),
         ("内容启动", "账号定位、素材库、脚本、发布节奏、复盘表"),
+        ("素材工具", "GreenVideo、素材库命名、授权状态、竞品结构拆解"),
         ("达人合作", "筛选条件、建联话术、样品状态、佣金、结果复盘"),
         ("日常运营", "订单、客服、退款、评价、健康分、库存预警"),
     ],
@@ -100,6 +104,7 @@ CHECKLIST_ITEMS = {
         ("Tariff and landed cost", "Origin, 10-digit HTSUS, base duty, Section 301/122/232/AD/CVD, broker check"),
         ("Listing review", "Category, title, images, claims, price, stock, shipping promise"),
         ("Content launch", "Positioning, asset library, scripts, posting rhythm, review sheet"),
+        ("Content tools", "GreenVideo, asset naming, rights status, competitor structure review"),
         ("Creator outreach", "Creator filters, outreach script, samples, commission, review"),
         ("Daily operations", "Orders, service, refunds, reviews, account health, inventory alerts"),
     ],
@@ -179,6 +184,13 @@ def chapter_block(index: int, en: str, zh: str, language: str) -> str:
 
 {labels["tariff_note"]}
 """
+    content_tool_section = ""
+    if any(key in en for key in ["GreenVideo", "Short Video Scripts"]):
+        content_tool_section = f"""
+### {localized_pair(language, '素材工具提醒', 'Content Tool Reminder')}
+
+{labels["content_tool_note"]}
+"""
 
     return f"""## {chapter_title(index, en, zh, language)}
 
@@ -203,6 +215,7 @@ def chapter_block(index: int, en: str, zh: str, language: str) -> str:
 - {mistake_1}
 - {mistake_2}
 {tariff_section}
+{content_tool_section}
 
 ### {labels["done"]}
 

@@ -26,6 +26,12 @@
 | Creator / 达人 | Link / 链接 | Followers / 粉丝 | Fit / 内容匹配度 | Contact Date / 联系日期 | Commission / 佣金 | Sample Status / 样品状态 | Reply / 回复 | Result / 结果 |
 |---|---|---:|---|---|---:|---|---|---|
 
+## Content Research and Asset Table / 内容研究和素材库表
+
+| Source URL / 来源链接 | Platform / 平台 | Creator / 作者 | Tool / 工具 | Product Angle / 产品角度 | Hook / 开头钩子 | Structure / 结构拆解 | Rights Status / 权利状态 | Action / 动作 |
+|---|---|---|---|---|---|---|---|---|
+|  |  |  | GreenVideo |  |  |  | Own / Authorized / Research only / 自有 / 已授权 / 仅研究 |  |
+
 ## Daily Operations Checklist / 每日运营清单
 
 | Time / 时间 | Action / 动作 | Owner / 负责人 | Done / 完成 |

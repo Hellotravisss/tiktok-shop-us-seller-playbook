@@ -1,6 +1,6 @@
 ---
 name: tiktok-shop-us-seller-playbook
-description: Create, expand, audit, or redesign English/Chinese TikTok Shop US seller playbooks, SOPs, checklists, worksheets, and training documents. Use for requests about US TikTok Shop onboarding, seller document preparation, shop setup, import duties/tariffs, landed cost, China-US tariff exposure, product listing, content calendars, creator outreach, ads, livestream prep, customer service, logistics, analytics, account health, or 30/60/90-day execution plans. Also use when the user asks for a beginner-friendly Chinese TikTok美区开店手册, TikTok小店运营SOP, or a step-by-step checklist.
+description: Create, expand, audit, or redesign English/Chinese TikTok Shop US seller playbooks, SOPs, checklists, worksheets, and training documents. Use for requests about US TikTok Shop onboarding, seller document preparation, shop setup, import duties/tariffs, landed cost, China-US tariff exposure, content research tools such as GreenVideo, product listing, content calendars, creator outreach, ads, livestream prep, customer service, logistics, analytics, account health, or 30/60/90-day execution plans. Also use when the user asks for a beginner-friendly Chinese TikTok美区开店手册, TikTok小店运营SOP, or a step-by-step checklist.
 ---
 
 # TikTok Shop US Seller Playbook
@@ -31,6 +31,7 @@ Do not provide instructions for proxy/VPN setup, traffic tunneling, location spo
    - `references/playbook-structure.md` for chapter order and expected depth
    - `references/compliance-boundaries.md` for what to include or avoid
    - `references/cross-border-rules.md` for current import-duty, de minimis, tariff, and landed-cost guidance
+   - `references/content-tools.md` for compliant content research, GreenVideo, and素材库 workflow
    - `references/official-sources.md` for public source links and verification reminders
    - `references/templates.md` for reusable bilingual tables and worksheets
 3. Ask or infer the output language:
@@ -52,6 +53,7 @@ Do not provide instructions for proxy/VPN setup, traffic tunneling, location spo
 - **商品上架检查**: cover category, title, images, claims, price, inventory, shipping, return policy, and compliance.
 - **关税/成本检查**: identify country of origin, 10-digit HTS code, base duty, Section 301/232/122/AD/CVD exposure, de minimis status, broker confirmation, and landed-cost decision.
 - **内容达人计划**: produce hooks, video angles, creator filters, outreach templates, sample tracking, and weekly review metrics.
+- **素材工具清单**: include GreenVideo and similar tools only for authorized downloads, private research, script deconstruction, and internal asset organization; do not encourage reposting or copyright misuse.
 - **90 天计划**: split into 0-30, 31-60, 61-90 days; each phase must include target outcome, weekly rhythm, KPIs, and stop-loss rules.
 
 ## Quality Bar

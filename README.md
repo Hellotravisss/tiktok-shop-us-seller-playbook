@@ -14,6 +14,7 @@ An open-source Codex Skill for creating practical TikTok Shop US seller playbook
 - Audits training material for outdated rules, vague advice, missing steps, or risky compliance claims
 - Creates listing review, creator outreach, content calendar, and 90-day launch plans
 - Adds import-duty, China tariff, HTS code, and landed-cost checks for practical SKU decisions
+- Adds compliant content research tooling, including GreenVideo for authorized downloads and script deconstruction
 - Structures content for Markdown, DOCX, PDF, and Pages-friendly documents
 
 ## 它能做什么
@@ -24,6 +25,7 @@ An open-source Codex Skill for creating practical TikTok Shop US seller playbook
 - 审核教程里的过时规则、空泛内容、缺失步骤和合规风险
 - 生成商品上架检查、达人建联、内容排期和 90 天启动计划
 - 加入进口税费、中美关税、HTS 编码和含税到岸成本核对
+- 补充 GreenVideo 等内容素材工具，用于授权下载、素材库整理和脚本拆解
 - 把内容整理成适合 Markdown、DOCX、PDF、Pages 的结构
 
 ## Install

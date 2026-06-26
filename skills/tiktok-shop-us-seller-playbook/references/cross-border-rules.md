@@ -1,8 +1,8 @@
 # Cross-Border Rules Snapshot / 跨境规则快照
 
-Snapshot date: 2026-06-24. Tariffs and platform rules can change quickly. Use this file to structure the answer, then verify current official sources before giving final numbers.
+Snapshot date: 2026-06-25. Tariffs and platform rules can change quickly. Use this file to structure the answer, then verify current official sources before giving final numbers.
 
-快照日期：2026-06-24。关税和平台规则变化很快。用本文件组织判断，但最终数字必须核对当前官方来源。
+快照日期：2026-06-25。关税和平台规则变化很快。用本文件组织判断，但最终数字必须核对当前官方来源。
 
 ## Current US Import Takeaways / 当前美国进口重点
 
@@ -12,10 +12,12 @@ Snapshot date: 2026-06-24. Tariffs and platform rules can change quickly. Use th
 - 2026 年 2 月 20 日 Executive Order 14389 已终止收取中国芬太尼/对等关税等 IEEPA 额外从价税。除非官方来源显示恢复，不要继续把旧的中国 IEEPA 10% + reciprocal 10% 当作当前税费加入。
 - A temporary Section 122 import surcharge of 10% ad valorem applies to many imports from February 24, 2026 through July 24, 2026, unless the product is exempt, suspended, modified, terminated earlier, or extended by Congress.
 - 2026 年 2 月 24 日至 2026 年 7 月 24 日，许多进口商品适用 Section 122 临时 10% 从价附加税；但要检查是否豁免、暂停、提前终止或由国会延长。
-- Section 301 China tariffs still matter by HTS code. Some China-origin goods remain subject to Section 301 duties unless an active exclusion applies. USTR extended 178 current exclusions under headings 9903.88.69 and 9903.88.70 through November 9, 2026.
-- Section 301 中国关税仍按 HTS 编码判断。部分中国原产商品仍有 Section 301 附加税；USTR 已将 9903.88.69 和 9903.88.70 下的 178 项现行排除延长至 2026 年 11 月 9 日。
+- Section 301 China tariffs still matter by HTS code. Some China-origin goods remain subject to Section 301 duties unless an active exclusion applies. USTR announced that 178 exclusions previously scheduled to expire on November 29, 2025 were extended until November 10, 2026; verify the current USTR/Federal Register notice and HTS Chapter 99 language before relying on an exclusion.
+- Section 301 中国关税仍按 HTS 编码判断。部分中国原产商品仍有 Section 301 附加税；USTR 公告称原定 2025 年 11 月 29 日到期的 178 项排除延长至 2026 年 11 月 10 日；使用排除前必须核对当前 USTR/Federal Register 通知和 HTS Chapter 99 文字。
 - Section 232, antidumping/countervailing duties, quotas, FDA/CPSC/FCC/FTC or other agency requirements can override simple margin math.
 - Section 232、反倾销/反补贴、配额、FDA/CPSC/FCC/FTC 等监管要求，可能直接改变成本或能否销售。
+- Treat every tariff statement as date-sensitive. Before quoting a final landed cost, check White House presidential actions, CBP CSMS/messages, USTR notices, and the current USITC HTS.
+- 所有关税判断都要当作“按日期变化”。报价或下单前，必须核对 White House 行政令、CBP CSMS/公告、USTR 通知和 USITC 当前 HTS。
 
 ## Tariff Check Workflow / 关税核对流程
 
@@ -32,6 +34,30 @@ Snapshot date: 2026-06-24. Tariffs and platform rules can change quickly. Use th
 4. 核对基础税率、Chapter 99 附加税号、Section 301 中国清单/排除、Section 122 临时附加税、Section 232、AD/CVD、配额和监管限制。
 5. 下库存订单或承诺利润前，让报关行确认。
 6. 把关税假设写进 SKU 评估表，并记录核对日期。
+
+## Shipment-Ready Verification / 出货前核验清单
+
+Before placing a bulk order or shipping inventory to the US, require this evidence:
+
+- Product description, material, function, intended use, photos, and spec sheet.
+- Confirmed country of origin and supplier declaration.
+- 10-digit HTSUS classification and basis for classification.
+- Current base duty from USITC HTS.
+- Current Chapter 99 and trade-remedy checks: Section 301, Section 122, Section 232, AD/CVD, quota, exclusions.
+- De minimis and entry-type decision: do not assume duty-free entry.
+- Customs broker confirmation with date, name, and email or document reference.
+- Landed-cost worksheet showing margin after duty, freight, platform fees, refunds, creator/ads allowance, and fulfillment.
+
+大货下单或发往美国前，要求留存这些证据：
+
+- 产品描述、材质、功能、用途、图片和规格书。
+- 原产国确认和供应商声明。
+- 10 位 HTSUS 编码和归类依据。
+- USITC HTS 当前基础税率。
+- 当前 Chapter 99 和贸易救济检查：Section 301、Section 122、Section 232、AD/CVD、配额、排除。
+- 低值免税和报关方式判断：不要默认免税入境。
+- 报关行确认，记录日期、联系人和邮件或文件编号。
+- 到岸成本表，包含关税、运费、平台费、退款损耗、达人/广告预留和履约成本后的利润。
 
 ## Landed Cost Formula / 到岸成本公式
 
